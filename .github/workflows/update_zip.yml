@@ -14,7 +14,7 @@ jobs:
         git pull
         rm -f Server_Pack.zip
     - name: Archive Release
-      uses: thedoctor0/zip-release@Edit_Server_Pack
+      uses: thedoctor0/zip-release@master/Edit_Server_Pack
       with:
         filename: 'Server_Pack.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
