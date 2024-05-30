@@ -1,12 +1,11 @@
 name: Update Server_Pack.zip
 on:
- push:
-  paths:
-  - 'Edit_Server_Pack/**'
+  push:
+    paths:
+      - 'Edit_Server_Pack/**'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -18,7 +17,7 @@ jobs:
         cd Edit_Server_Pack
         cp -R . ../Server_Pack
         cd ..
-        rm Server_Pack.zip
+        if [ -f Server_Pack.zip ]; then rm Server_Pack.zip; fi
         cd Server_Pack
         zip -r ../Server_Pack.zip .
         rm -r ../Server_Pack
@@ -29,5 +28,5 @@ jobs:
         git config --local user.email "buffal0chip521@gmail.com"
         git config --local user.name "buffal0chip"
         git add -A
-        git commit -m "Update Server_Pack.zip"
+        git diff-index --quiet HEAD || git commit -m "Update Server_Pack.zip"
         git push
