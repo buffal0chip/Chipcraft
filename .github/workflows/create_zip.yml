@@ -13,8 +13,9 @@ jobs:
         git rev-parse --show-toplevel
         cp -R Edit_Server_Pack Server_Pack
         rm Server_Pack.zip
-        zip -r Server_Pack.zip Server_Pack/
-        rm -r Server_Pack
+        cd Server_Pack
+        zip -r ../Server_Pack.zip .
+        rm -r ../Server_Pack
       shell: bash
 
     - name: Commit and push updated Zip file
