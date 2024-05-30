@@ -21,8 +21,8 @@ jobs:
           # Copy the contents of Edit_Server_Pack to the temporary directory
           cp -r Edit_Server_Pack/* temp_zip/
 
-          # Create a new zip file
-          zip -r Server_Pack.zip temp_zip/
+          # Create a new zip file with only the contents of Edit_Server_Pack
+          zip -r Server_Pack.zip temp_zip/*
 
           # Clean up
           rm -rf temp_zip
