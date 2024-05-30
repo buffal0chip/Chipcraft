@@ -30,4 +30,4 @@ jobs:
           git config --global user.email "action@github.com"
           git add -A
           git commit -m "Update Server_Pack.zip"
-          git push force
+          git push --force
