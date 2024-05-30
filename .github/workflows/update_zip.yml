@@ -4,8 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    
     - name: Checkout code
       uses: actions/checkout@v2
+      
     - name: pull latest and remove old file from repo
       run: |
         git config --global user.name "usernamehere"
@@ -13,12 +15,16 @@ jobs:
         git config pull.rebase false
         git pull
         rm -f Server_Pack.zip
+        
+    - name: Change directory to Edit_Server_Pack
+      run: cd Edit_Server_Pack
+
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
-        filename: 'Server_Pack.zip'
+        filename: '../Server_Pack.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
-        path: 'Edit_Server_Pack'
+        
     - name: push changes to remote
       run: |
         git add -A
