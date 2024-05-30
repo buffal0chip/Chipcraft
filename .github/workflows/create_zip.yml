@@ -15,7 +15,7 @@ jobs:
       run: |
         rm Server_Pack.zip
         cd Edit_Server_Pack
-        zip ../Server_Pack.zip .
+        zip -r ../Server_Pack.zip .
       shell: bash
 
     - name: Commit and push updated Zip file
