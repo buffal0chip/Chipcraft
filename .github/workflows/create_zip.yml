@@ -12,15 +12,7 @@ jobs:
 
     - name: Make zip folder
       run: |
-        git rev-parse --show-toplevel
-        mkdir Server_Pack
-        cd Edit_Server_Pack
-        cp -R . ../Server_Pack
-        cd ..
-        rm Server_Pack.zip
-        cd Server_Pack
-        zip -r ../Server_Pack.zip .
-        rm -r ../Server_Pack
+        ls
       shell: bash
 
     - name: Commit and push updated Zip file
