@@ -18,7 +18,7 @@ jobs:
       with:
         filename: 'Server_Pack.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
-        include: 'Edit_Server_Pack/assets'
+        directory: 'Edit_Server_Pack/'
     - name: push changes to remote
       run: |
         git add -A
