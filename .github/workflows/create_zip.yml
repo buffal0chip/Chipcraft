@@ -1,5 +1,6 @@
 name: Update Server_Pack.zip
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'Edit_Server_Pack/**'
