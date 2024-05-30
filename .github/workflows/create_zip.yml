@@ -10,14 +10,16 @@ jobs:
 
     - name: Zip Seats_Pack folder
       run: |
-        rm - f Seats_Pack
-        zip -r ../Seats_Pack.zip .
+        cd\
+        mkdir transfer_folder
+        git archive --remote=. HEAD:Seats_Pack | tar -x -C ~/transfer_folder
+        rm Seats_Pack.zip
+        zip -r Seats_Pack.zip transfer_folder 
       shell: bash
 
     - name: Commit and push updated Zip file
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add ../Seats_Pack.zip
         git commit -m "Update Seats_Pack.zip"
         git push
