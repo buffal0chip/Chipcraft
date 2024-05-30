@@ -11,8 +11,8 @@ jobs:
     - name: Zip Seats_Pack folder
       run: |
         git rev-parse --show-toplevel
-        cp -R Edit_Server_Pack Server_Pack
         rm Server_Pack.zip
+        cp -R Edit_Server_Pack Server_Pack
         cd Server_Pack
         zip -r ../Server_Pack.zip .
         rm -r ../Server_Pack
