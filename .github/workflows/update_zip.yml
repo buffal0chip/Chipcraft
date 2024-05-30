@@ -19,7 +19,7 @@ jobs:
           rm Server_Pack.zip
 
           # Create a new zip file with only the contents of Edit_Server_Pack
-          zip -r Server_Pack.zip Edit_Server_Pack/*
+          zip Server_Pack.zip Edit_Server_Pack/*
 
       - name: Commit and push changes
         run: |
