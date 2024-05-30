@@ -12,7 +12,7 @@ jobs:
       run: |
         git rev-parse --show-toplevel
         mkdir transfer_folder
-        git archive --remote=. Seats_Pack | tar -x -C ~/transfer_folder
+        git archive --remote=. /Seats_Pack | tar -x -C ~/transfer_folder
         rm Seats_Pack.zip
         zip -r Seats_Pack.zip transfer_folder 
       shell: bash
