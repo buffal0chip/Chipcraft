@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 18,
-    "description": "Seat pack for the seats data pack"
+    "description": "Server Pack",
+    "pack_format": 40,
+    "supported_formats":[0,999]
   }
 }
