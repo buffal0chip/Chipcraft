@@ -12,6 +12,7 @@ jobs:
 
     - name: Zip Seats_Pack folder
       run: |
+        cd /home/runner/work/Chipcraft/Chipcraft/Seats_Pack
         zip -r ../Seats_Pack.zip .
       shell: bash
 
