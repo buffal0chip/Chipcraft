@@ -15,27 +15,22 @@ jobs:
 
       - name: Create a new zip file
         run: |
+          # Clean up
+          rm Server_Pack.zip
+          
           # Create a temporary directory
-          mkdir temp_zip
+          mkdir Server_Pack
 
           # Copy the contents of Edit_Server_Pack to the temporary directory
-          cp -r Edit_Server_Pack/* temp_zip/
+          cp -r Edit_Server_Pack/* Server_Pack/
 
           # Create a new zip file with only the contents of Edit_Server_Pack
-          zip -r Server_Pack.zip temp_zip/*
-
-          # Clean up
-          rm -rf temp_zip
-
-      - name: Replace contents of Edit_Server_Pack with Server_Pack.zip
-        run: |
-          # Unzip Server_Pack.zip into Edit_Server_Pack
-          unzip -o Server_Pack.zip -d Edit_Server_Pack
+          zip -r Server_Pack.zip Server_Pack
 
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "action@github.com"
-          git add Edit_Server_Pack Server_Pack.zip
-          git commit -m "Update Edit_Server_Pack and Server_Pack.zip"
+          git add -A
+          git commit -m "Update Server_Pack.zip"
           git push
