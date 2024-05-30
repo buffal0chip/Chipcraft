@@ -18,7 +18,8 @@ jobs:
       with:
         filename: 'Server_Pack.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
-        path: 'Edit_Server_Pack'
+        command: "cd Edit_Server_Pack/"
+        #path: 'Edit_Server_Pack'
     - name: push changes to remote
       run: |
         git add -A
