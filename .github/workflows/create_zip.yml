@@ -27,6 +27,7 @@ jobs:
       run: |
         git config --local user.email "buffal0chip521@gmail.com"
         git config --local user.name "buffal0chip"
+        git rev-parse --show-toplevel
         git add -A
         git diff-index --quiet HEAD || git commit -m "Update Server_Pack.zip"
         git push
