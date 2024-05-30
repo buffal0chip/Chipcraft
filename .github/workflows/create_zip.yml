@@ -11,9 +11,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Make zip folder
+    - name: Remove old zip
       run: |
         rm Server_Pack.zip
+      shell: bash
+
+    - name: Make new zip
+      run: |
         cd Edit_Server_Pack
         zip -r ../Server_Pack.zip .
       shell: bash
