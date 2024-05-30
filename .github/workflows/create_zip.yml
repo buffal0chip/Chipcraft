@@ -1,25 +1,28 @@
 name: Create Zip File
-on: push
+
+on:
+  push:
+    paths:
+      - 'Seats_Pack/**' # Trigger only when changes occur in the Seats_Pack folder
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v2
-    - name: pull latest and remove old file from repo
+
+    - name: Zip Seats_Pack folder
       run: |
-        git config --global user.name buffal0chip
-        git config --global user.email buffal0chip521@gmail.com
-        git config pull.rebase false
-        git pull
-        rm -f Seats_Pack.zip
-    - name: Archive Release
-      uses: thedoctor0/zip-release@master
-      with:
-        filename: 'Seats_Pack.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig'
-    - name: push changes to remote
+        cd Seats_Pack
+        zip -r ../Seats_Pack.zip .
+      shell: bash
+
+    - name: Commit and push updated Zip file
       run: |
-        git add -A
-        git commit -m "new pack"
-        git push --force
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add ../Seats_Pack.zip
+        git commit -m "Update Seats_Pack.zip"
+        git push
