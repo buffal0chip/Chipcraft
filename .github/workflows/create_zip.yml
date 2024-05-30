@@ -13,19 +13,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Create a new zip file
+      - name: Update zip
         run: |
-          # Clean up
+          # Remove old zip
           rm Server_Pack.zip
-          
-          # Create a temporary directory
-          mkdir Server_Pack
-
-          # Copy the contents of Edit_Server_Pack to the temporary directory
-          cp -r Edit_Server_Pack/* Server_Pack/
 
           # Create a new zip file with only the contents of Edit_Server_Pack
-          zip -r Server_Pack.zip Server_Pack
+          zip -r Server_Pack.zip Edit_Server_Pack/*
 
       - name: Commit and push changes
         run: |
