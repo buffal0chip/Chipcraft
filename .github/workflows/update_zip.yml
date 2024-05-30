@@ -15,15 +15,13 @@ jobs:
         git config pull.rebase false
         git pull
         rm -f Server_Pack.zip
-        
-    - name: Change directory to Edit_Server_Pack
-      run: cd Edit_Server_Pack
 
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
         filename: 'Server_Pack.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
+        path: "assets/"
         
     - name: push changes to remote
       run: |
