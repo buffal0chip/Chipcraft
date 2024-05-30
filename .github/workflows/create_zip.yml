@@ -11,9 +11,9 @@ jobs:
     - name: Zip Seats_Pack folder
       run: |
         git rev-parse --show-toplevel
-        cp -R Seat_Pack New_Seats_Pack
-        rm Seats_Pack.zip
-        zip -r Seats_Pack.zip New_Seats_Pack
+        cp -R Edit_Server_Pack Server_Pack
+        rm Server_Pack.zip
+        zip -r Server_Pack.zip Server_Pack
       shell: bash
 
     - name: Commit and push updated Zip file
