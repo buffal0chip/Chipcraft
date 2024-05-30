@@ -12,7 +12,6 @@ jobs:
 
     - name: Zip Seats_Pack folder
       run: |
-        cd Seats_Pack
         zip -r ../Seats_Pack.zip .
       shell: bash
 
