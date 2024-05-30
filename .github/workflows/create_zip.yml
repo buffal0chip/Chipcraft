@@ -11,10 +11,9 @@ jobs:
     - name: Zip Seats_Pack folder
       run: |
         git rev-parse --show-toplevel
-        mkdir transfer_folder
-        git archive --remote=. /Seats_Pack | tar -x -C ~/transfer_folder
+        cp -R Seats_Pack New_Seats_Pack
         rm Seats_Pack.zip
-        zip -r Seats_Pack.zip transfer_folder 
+        zip -r Seats_Pack.zip New_Seats_Pack
       shell: bash
 
     - name: Commit and push updated Zip file
