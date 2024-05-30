@@ -13,6 +13,7 @@ jobs:
     - name: Make zip folder
       run: |
         git rev-parse --show-toplevel
+        mkdir Server_Pack
         cd Edit_Server_Pack
         cp -R . ../Server_Pack
         cd ..
