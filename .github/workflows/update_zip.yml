@@ -13,8 +13,8 @@ jobs:
         git config pull.rebase false
         git pull
         rm -f Server_Pack.zip
-    - name: Archive Edit_Server_Pack
-      uses: thedoctor0/zip-Edit_Server_Pack@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@master
       with:
         filename: 'Server_Pack.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
