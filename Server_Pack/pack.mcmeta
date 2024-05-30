@@ -1,7 +1,0 @@
-{
-  "pack": {
-    "description": "Server Pack",
-    "pack_format": 40,
-    "supported_formats":[0,999]
-  }
-}
