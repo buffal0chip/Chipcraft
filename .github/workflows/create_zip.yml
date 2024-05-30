@@ -1,7 +1,5 @@
 name: Create Zip File
-
 on: push
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +10,7 @@ jobs:
 
     - name: Zip Seats_Pack folder
       run: |
-        cd /home/runner/work/Chipcraft/Chipcraft/Seats_Pack
+        rm - f Seats_Pack
         zip -r ../Seats_Pack.zip .
       shell: bash
 
