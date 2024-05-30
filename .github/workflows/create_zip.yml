@@ -14,6 +14,7 @@ jobs:
     - name: Make zip folder
       run: |
         git rev-parse --show-toplevel
+        mkdir Server_Pack
         cp -R Edit_Server_Pack Server_Pack
         rm Server_Pack.zip
         cd Server_Pack
