@@ -1,7 +1,7 @@
 name: Update Server_Pack.zip
 on:
  push:
-  branches:
+  paths:
   - 'Edit_Server_Pack/**'
 jobs:
   build:
