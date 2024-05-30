@@ -1,5 +1,8 @@
 name: Create Zip File
-on: push
+on:
+  push:
+    paths:
+      Edit_Server_Pack/**
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,6 +17,7 @@ jobs:
         cp -R Edit_Server_Pack Server_Pack
         rm Server_Pack.zip
         zip -r Server_Pack.zip Server_Pack
+        rm Server_Pack
       shell: bash
 
     - name: Commit and push updated Zip file
