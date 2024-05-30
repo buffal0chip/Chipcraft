@@ -1,5 +1,6 @@
 name: Create Zip File
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,6 +20,8 @@ jobs:
         filename: 'Seats_Pack.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
     - name: push changes to remote
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git add -A
         git commit -m "new pack"
