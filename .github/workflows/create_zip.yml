@@ -1,32 +1,36 @@
-name: Update Server_Pack.zip
+name: Update Server Pack
+
 on:
-  workflow_dispatch:
   push:
     paths:
-      - 'Edit_Server_Pack/**'
+      - 'Edit_Server_Pack/**' # Trigger the workflow when anything changes in the Edit_Server_Pack folder
+
 jobs:
-  build:
+  update-zip:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Remove old zip
-      run: |
-        rm Server_Pack.zip
-      shell: bash
+      - name: Create a new zip file
+        run: |
+          # Create a temporary directory
+          mkdir temp_zip
 
-    - name: Make new zip
-      run: |
-        cd Edit_Server_Pack
-        zip -r ../Server_Pack.zip .
-      shell: bash
+          # Copy the contents of Edit_Server_Pack to the temporary directory
+          cp -r Edit_Server_Pack/* temp_zip/
 
-    - name: Commit and push updated Zip file
-      run: |
-        git config --local user.email "buffal0chip521@gmail.com"
-        git config --local user.name "buffal0chip"
-        git rev-parse --show-toplevel
-        git add -A
-        git commit -m "Update Server_Pack.zip"
-        git push
+          # Create a new zip file
+          zip -r Server_Pack.zip temp_zip/
+
+          # Clean up
+          rm -rf temp_zip
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "action@github.com"
+          git add Server_Pack.zip
+          git commit -m "Update Server_Pack.zip"
+          git push
