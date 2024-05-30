@@ -17,8 +17,8 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         filename: 'Server_Pack.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig *.zip'
-        path: 'Edit_Server_Pack/assets Edit_Server_Pack/pack.mcmeta'
+        exclusions: '*.git* /*node_modules/* .editorconfig'
+        command: 'cd Edit_Server_Pack/'
     - name: push changes to remote
       run: |
         git add -A
