@@ -17,8 +17,8 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         filename: 'Server_Pack.zip'
-        exclude: '*.git* /*node_modules/* .editorconfig /*Edit_Server_Pack'
-        include: 'Edit_Server_Pack/assets'
+        exclude: '*.git* /*node_modules/* .editorconfig'
+        include: 'Edit_Server_Pack/*'
     - name: push changes to remote
       run: |
         git add -A
