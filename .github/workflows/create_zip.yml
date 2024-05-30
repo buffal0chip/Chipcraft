@@ -10,7 +10,6 @@ jobs:
 
     - name: Zip Seats_Pack folder
       run: |
-        cd\
         mkdir transfer_folder
         git archive --remote=. HEAD:Seats_Pack | tar -x -C ~/transfer_folder
         rm Seats_Pack.zip
