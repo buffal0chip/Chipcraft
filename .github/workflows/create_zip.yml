@@ -1,9 +1,6 @@
 name: Create Zip File
 
-on:
-  push:
-    paths:
-      - 'Seats_Pack/**' # Trigger only when changes occur in the Seats_Pack folder
+on: push
 
 jobs:
   build:
