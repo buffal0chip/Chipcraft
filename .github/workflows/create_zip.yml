@@ -1,5 +1,8 @@
-name: Create Zip File
-on: push
+name: Update Server_Pack.zip
+on:
+ push:
+  branches:
+  - 'Edit_Server_Pack/**'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -8,7 +11,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Zip Seats_Pack folder
+    - name: Make zip folder
       run: |
         git rev-parse --show-toplevel
         cp -R Edit_Server_Pack Server_Pack
@@ -23,5 +26,5 @@ jobs:
         git config --local user.email "buffal0chip521@gmail.com"
         git config --local user.name "buffal0chip"
         git add -A
-        git commit -m "Update Seats_Pack.zip"
+        git commit -m "Update Server_Pack.zip"
         git push
