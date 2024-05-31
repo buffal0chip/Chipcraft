@@ -8,7 +8,7 @@ Upon pushing the changes, it may take around 10 minutes for the resource pack to
 ## Add texture:
 -Follow this file path to the item folder.
 
-  assets/minecraft/textures/item
+    assets/minecraft/textures/item
 
 -Click the "Add File" button in the top left corner then select "upload". The drag and drop a .png file that will act as the texture for your custom tool or weapon.
 
