@@ -9,15 +9,25 @@ Blockbench is a program (that can be run from a web browser) that allows you to 
 [Blockbench](https://www.blockbench.net/)
 
 # Custom Weapons and Tools
-## Add texture:
+## 1. Add texture:
+First we must add a texture for the new item:
+
 -Follow this file path to the item folder.
 
     assets/minecraft/textures/item
 
--Click the "Add File" button in the top left corner then select "upload files". The drag and drop a .png file that will act as the texture for your custom tool or weapon.
+-Click the "Add File" button in the top left corner then select "upload files". Then drag and drop a .png file that will act as the texture for your custom tool or weapon.
 
-## Add model:
+## 2. Add model:
+Second we must add a model for the texture to be placed on:
 
+-Follow this file path to the item folder.
+
+    assets/minecraft/model/item
+
+-Click the "Add File" button in the top left corner then select "upload files". Then drag and drop a .json file that will act as the model for your custom tool or weapon.
+
+-The following is an example of a basic .json format item model. If you replace the word "example" with the texture you uploaded into the item folder it will be a basic item with that texture. Or you can import a custom model from Blockbench.
 ```json
 {
 	"parent": "minecraft:item/generated",
@@ -27,4 +37,19 @@ Blockbench is a program (that can be run from a web browser) that allows you to 
 } 
 ```
 
-## Add custom model data:
+## 3. Add custom model data:
+Lastly we must edit the .json model file for the actual vanilla item we want to add the custom texture/model to:
+
+-Follow this file path to the item folder then click on the item that you want to add the custom texture/model to.
+
+    assets/minecraft/model/item
+
+-For this example we will use the netherite sword. Below is the default
+```json
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+	  "layer0": "minecraft:item/example"
+	}
+} 
+```
