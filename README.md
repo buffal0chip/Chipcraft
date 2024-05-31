@@ -27,7 +27,7 @@ Second we must add a model for the texture to be placed on:
 
 -Click the "Add File" button in the top left corner then select "upload files". Then drag and drop a .json file that will act as the model for your custom tool or weapon.
 
--The following is an example of a basic .json format item model. If you replace the word "example" with the texture you uploaded into the item folder it will be a basic item with that texture. Or you can import a custom model from [Blockbench](https://github.com/buffal0chip/Chipcraft/tree/main?tab=readme-ov-file#custom-weapons-and-tools).
+-The following is an example of a basic .json format item model. If you replace the word "example" with the texture you uploaded into the item folder it will be a basic item with that texture. Or you can import a custom model from [Blockbench](https://github.com/buffal0chip/Chipcraft/tree/main?tab=readme-ov-file#custom-blockbench).
 ```json
 {
 	"parent": "minecraft:item/generated",
