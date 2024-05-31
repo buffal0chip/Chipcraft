@@ -18,17 +18,13 @@ Blockbench is a program (that can be run from a web browser) that allows you to 
 
 ## Add model:
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+	  "layer0": "minecraft:item/seat"
+	}
+} 
 ```
 
 ## Add custom model data:
