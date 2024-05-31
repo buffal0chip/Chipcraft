@@ -18,7 +18,7 @@ Blockbench is a program (that can be run from a web browser) that allows you to 
 
 ## Add model:
 
-```
+```python
 # example
 #example
 {
