@@ -19,10 +19,12 @@ Blockbench is a program (that can be run from a web browser) that allows you to 
 ## Add model:
 
 ```
+# example
+#example
 {
 	"parent": "minecraft:item/generated",
 	"textures": {
-	  "layer0": "minecraft:item/seat"
+	  "layer0": "minecraft:item/#example"
 	}
 } 
 ```
