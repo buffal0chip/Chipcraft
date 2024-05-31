@@ -44,12 +44,25 @@ Lastly we must edit the .json model file for the actual vanilla item we want to 
 
     assets/minecraft/model/item
 
--For this example we will use the netherite sword. Below is the default
+-For this example we will use the netherite sword. Below is the .json file for a netherite sword with one custom model data override.
 ```json
 {
-	"parent": "minecraft:item/generated",
-	"textures": {
-	  "layer0": "minecraft:item/example"
-	}
-} 
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/netherite_sword"
+  },
+  "overrides": [
+    {
+      "predicate": {"custom_model_data": 1},
+      "model": "item/example"
+    }
+  ]
+}
+```
+-The custom model data is how you add multiple different textures/models to a single item. In order to do so you must add a new override to the items .json file such as the following. Copy and paste the following and change the custom model data number to be one higher. Then change the word "example" to the name of your .json item model. All the overrides must also be separated by commas.
+```json
+    {
+      "predicate": {"custom_model_data": 1},
+      "model": "item/example"
+    }
 ```
