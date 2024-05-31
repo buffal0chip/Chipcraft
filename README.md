@@ -19,7 +19,16 @@ Blockbench is a program (that can be run from a web browser) that allows you to 
 ## Add model:
 
 ```python
-test
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
 ```
 
 ## Add custom model data:
