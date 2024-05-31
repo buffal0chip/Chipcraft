@@ -6,5 +6,7 @@ Upon pushing the changes, it may take around 10 minutes for the resource pack to
 
 # Custom Weapons and Tools
 Add texture:
-\nAdd model:
-\nAdd custom model data:
+
+Add model:
+
+Add custom model data:
