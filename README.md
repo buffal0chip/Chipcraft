@@ -6,7 +6,9 @@ Upon pushing the changes, it may take around 10 minutes for the resource pack to
 
 # Custom Weapons and Tools
 Add texture:
-  Follow this file path to the item folder.
+
+  -Follow this file path to the item folder.
+  
     assets/minecraft/textures/item
 
 Add model:
