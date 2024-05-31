@@ -66,3 +66,7 @@ Lastly we must edit the .json model file for the actual vanilla item we want to 
       "model": "item/example"
     }
 ```
+
+# Custom Hats
+
+# Custom Sounds
