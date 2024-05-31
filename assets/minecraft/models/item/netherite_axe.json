@@ -5,9 +5,7 @@
   },
   "overrides": [
     {
-      "predicate": {
-        "custom_model_data": 1
-      },
+      "predicate": {"custom_model_data": 1},
       "model": "item/example"
     }
   ]
