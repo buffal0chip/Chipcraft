@@ -1,7 +1,10 @@
 {
   "pack": {
-    "description": "Server Pack",
-    "pack_format": 40,
-    "supported_formats":[0,999]
+    "pack_format": 45,
+    "supported_formats": [
+      0,
+      999
+    ],
+    "description": "Paintings Resource Pack"
   }
 }
