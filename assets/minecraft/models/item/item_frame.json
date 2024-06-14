@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/item_frame"
+  },
+  "overrides": [
+    {
+      "predicate": {"custom_model_data": 1},
+      "model": "item/custom_item"
+    },
+    {
+      "predicate": {"custom_model_data": 2},
+      "model": "item/trophy"
+    },
+    {
+      "predicate": {"custom_model_data": 3},
+      "model": "item/last_to_die_trophy"
+    },
+    {
+      "predicate": {"custom_model_data": 35000},
+      "model": "item/custom_item"
+    }
+  ]
+}

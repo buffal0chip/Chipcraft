@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/golden_helmet"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "item/invisible_helmet"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "item/top_hat"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "item/joshs_hat"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 90
+      },
+      "model": "item/tree_hat"
+    }
+  ]
+}
