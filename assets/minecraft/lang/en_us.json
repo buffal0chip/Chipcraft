@@ -66,4 +66,23 @@
     "block.minecraft.banner.banners_dp.a_cap.red": "Red A",
     "block.minecraft.banner.banners_dp.a_cap.white": "White A",
     "block.minecraft.banner.banners_dp.a_cap.yellow": "Yellow A"
+
+    "painting.paintings_dp.josh_the_creeper_killer.author": "buffal0chip",
+    "painting.paintings_dp.josh_the_creeper_killer.title": "Josh the Creeper Killer",
+    "painting.paintings_dp.ghosts_of_past_worlds.author": "buffal0chip",
+    "painting.paintings_dp.ghosts_of_past_worlds.title": "Ghosts of Past Worlds",
+    "painting.paintings_dp.kyle.author": "buffal0chip",
+    "painting.paintings_dp.kyle.title": "Kyle",
+    "painting.paintings_dp.rafe.author": "buffal0chip",
+    "painting.paintings_dp.rafe.title": "Rafe",
+    "painting.paintings_dp.logan_the_great.author": "buffal0chip",
+    "painting.paintings_dp.logan_the_great.title": "Logan the Great",
+    "painting.paintings_dp.minecraft.author": "buffal0chip",
+    "painting.paintings_dp.minecraft.title": "Minecraft",
+    "painting.paintings_dp.eye_of_color.author": "buffal0chip",
+    "painting.paintings_dp.eye_of_color.title": "Eye of Color",
+    "painting.paintings_dp.prison_mike.author": "buffal0chip",
+    "painting.paintings_dp.prison_mike.title": "Prison Mike",
+    "painting.paintings_dp.herobrine.author": "buffal0chip",
+    "painting.paintings_dp.herobrine.title": "Herobrine"
 }
