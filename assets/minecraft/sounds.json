@@ -18,5 +18,55 @@
                 "attenuation_distance": 16
             }
         ]
+    },
+    "ive_come_for_your_pickle": {
+        "sounds": [
+            {
+                "name": "ive_come_for_your_pickle",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
+    },
+    "no_god_please_no": {
+        "sounds": [
+            {
+                "name": "no_god_please_no",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
+    },
+    "this_guy_stinks": {
+        "sounds": [
+            {
+                "name": "this_guy_stinks",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
+    },
+    "john_cena": {
+        "sounds": [
+            {
+                "name": "john_cena",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
+    },
+    "some_of_you_may_die": {
+        "sounds": [
+            {
+                "name": "some_of_you_may_die",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
     }
 }
