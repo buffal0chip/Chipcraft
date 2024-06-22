@@ -8,5 +8,15 @@
                 "attenuation_distance": 16
             }
         ]
+    },
+    "im_gonna_come": {
+        "sounds": [
+            {
+                "name": "im_gonna_come",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
     }
 }
