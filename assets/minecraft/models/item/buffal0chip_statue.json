@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "buffal0chip_statue",
-		"particle": "buffal0chip_statue"
+		"0": "item/buffal0chip_statue",
+		"particle": "item/buffal0chip_statue"
 	},
 	"elements": [
 		{
