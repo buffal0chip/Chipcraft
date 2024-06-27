@@ -17,6 +17,10 @@
       "model": "item/last_to_die_trophy"
     },
     {
+      "predicate": {"custom_model_data": 4},
+      "model": "item/buffal0chip_statue"
+    },
+    {
       "predicate": {"custom_model_data": 35000},
       "model": "item/custom_item"
     }
