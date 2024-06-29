@@ -63,7 +63,7 @@
         "sounds": [
             {
                 "name": "some_of_you_may_die",
-                "volume": 10,
+                "volume": 1,
                 "pitch": 1,
                 "attenuation_distance": 16
             }
