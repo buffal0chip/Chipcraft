@@ -25,6 +25,12 @@
     },
     {
       "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "item/crown"
+    },
+    {
+      "predicate": {
         "custom_model_data": 90
       },
       "model": "item/tree_hat"
