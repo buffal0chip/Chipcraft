@@ -68,5 +68,15 @@
                 "attenuation_distance": 16
             }
         ]
+    },
+    "not_here_kitten_whiskers": {
+        "sounds": [
+            {
+                "name": "not_here_kitten_whiskers",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
     }
 }
