@@ -98,5 +98,123 @@
                 "attenuation_distance": 16
             }
         ]
+    },
+    "crowd": {
+        "sounds": [
+            {
+                "name": "cheer_1",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_2",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_3",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_4",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_5",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_6",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_7",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_8",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_9",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_10",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_11",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_12",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_13",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "cheer_14",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "clapping_1",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "clapping_2",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "ambient_cheer_1",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "ambient_cheer_2",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            },
+            {
+                "name": "whoo_1",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
     }
 }
