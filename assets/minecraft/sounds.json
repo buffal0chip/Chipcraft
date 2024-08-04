@@ -78,5 +78,25 @@
                 "attenuation_distance": 16
             }
         ]
+    },
+    "yippee": {
+        "sounds": [
+            {
+                "name": "yippee",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
+    },
+    "he_needs_some_milk": {
+        "sounds": [
+            {
+                "name": "he_needs_some_milk",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
     }
 }
