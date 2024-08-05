@@ -226,5 +226,15 @@
                 "attenuation_distance": 16
             }
         ]
+    },
+    "chicken_burger": {
+        "sounds": [
+            {
+                "name": "chicken_burger",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
     }
 }
