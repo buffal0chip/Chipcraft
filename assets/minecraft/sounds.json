@@ -216,5 +216,15 @@
                 "attenuation_distance": 16
             }
         ]
+    },
+    "the_dirtier_the_better": {
+        "sounds": [
+            {
+                "name": "the_dirtier_the_better",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
     }
 }
