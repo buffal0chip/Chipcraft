@@ -49,6 +49,14 @@
       "model": "item/monopoly_money_500"
     },
     {
+      "predicate": {"custom_model_data": 12},
+      "model": "item/chance_card"
+    },
+    {
+      "predicate": {"custom_model_data": 13},
+      "model": "item/community_chest_card"
+    },
+    {
       "predicate": {"custom_model_data": 35000},
       "model": "item/custom_item"
     }
