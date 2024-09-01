@@ -57,6 +57,10 @@
       "model": "item/community_chest_card"
     },
     {
+      "predicate": {"custom_model_data": 14},
+      "model": "item/banana"
+    },
+    {
       "predicate": {"custom_model_data": 35000},
       "model": "item/custom_item"
     }
