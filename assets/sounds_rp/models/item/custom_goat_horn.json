@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+	  "layer0": "sounds_rp:item/custom_goat_horn"
+	}
+  }  

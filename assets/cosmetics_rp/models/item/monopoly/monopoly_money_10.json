@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+	  "layer0": "cosmetics_rp:item/monopoly/monopoly_money_10"
+	}
+  }  

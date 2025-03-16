@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+	  "layer0": "item_frames_rp:item/item_frames_book"
+	}
+  }
