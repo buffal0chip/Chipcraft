@@ -240,7 +240,7 @@
     "entity.creeper.primed": {
         "sounds": [
             {
-                "name": "entity.creeper.primed",
+                "name": "alahu.akbar",
                 "volume": 1,
                 "pitch": 2,
                 "attenuation_distance": 16,
