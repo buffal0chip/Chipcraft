@@ -249,7 +249,7 @@
             {
                 "name": "entity.creeper.primed",
                 "volume": 1,
-                "pitch": 2,
+                "pitch": 1,
                 "attenuation_distance": 16,
                 "weight": 0
             }
