@@ -236,5 +236,25 @@
                 "attenuation_distance": 16
             }
         ]
+    },
+    "chicken_jockey": {
+        "sounds": [
+            {
+                "name": "chicken_jockey",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
+    },
+    "i_am_steve": {
+        "sounds": [
+            {
+                "name": "i_am_steve",
+                "volume": 1,
+                "pitch": 1,
+                "attenuation_distance": 16
+            }
+        ]
     }
 }
